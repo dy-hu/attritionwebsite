@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attrition Website</title>
+    
+    <!-- links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- content -->
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 link-secondary">Index</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+            </ul>
+    
+          </div>
+        </div>
+      </header>
+
+      <div class="p-3 text-center">
+        <p class="lead">Infant fNIRS Research Participant Attrition Rate Calculator</p>
+      </div>
+
+      <div class="container-fluid pb-3">
+        <div class="d-grid gap-3" style="grid-template-columns: 2fr 2fr;">
+          <div class="bg-light border rounded-3 p-3">
+            <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label for="country" class="form-label"><strong>Age </strong>(in mo.)</label>
+                        <select class="form-select" id="country" required>
+                          <option value="">Choose...</option>
+                          <option>Numbers go here</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid country.
+                        </div>
+                      </div>
+      
+                      <div class="col-12">
+                        <label for="country" class="form-label"><strong># of fNIRS channels</strong></label>
+                        <select class="form-select" id="country" required>
+                          <option value="">Choose...</option>
+                          <option>Numbers go here</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid country.
+                        </div>
+                      </div>
+      
+                      <div class="col-12">
+                        <label for="country" class="form-label"><strong>Experimental Design</strong></label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="default1" id="flexRadioDefault1" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Block design
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="default1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Trial design
+                            </label>
+                          </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="country" class="form-label"><strong>Stimulus Type</strong></label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="default2" id="flexRadioDefault3" checked>
+                            <label class="form-check-label" for="flexRadioDefault3">
+                              No stimuli
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="default2" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                              Visual
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="default2" id="flexRadioDefault5">
+                            <label class="form-check-label" for="flexRadioDefault5">
+                              Audio
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="default2" id="flexRadioDefault6">
+                            <label class="form-check-label" for="flexRadioDefault6">
+                              Audiovisual
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="default2" id="flexRadioDefault7">
+                            <label class="form-check-label" for="flexRadioDefault7">
+                              Other
+                            </label>
+                          </div>
+                      </div>
+                </div>
+      
+              </form>
+          </div>
+          <div class="bg-light border rounded-3 p-3">
+            <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label for="firstName" class="form-label"><strong>Expected Attrition Rate</strong></label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" disabled readonly>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="attritionTips" class="form-label"><strong>To reduce attrition rate...</strong></label>
+                    <div class="bg-light border rounded-3 p-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem metus, posuere vitae blandit id, sollicitudin eget risus. Aliquam volutpat, eros vel pellentesque tincidunt, erat dui malesuada lorem, sit amet tempus libero orci a dui. Phasellus vel dolor sem. Suspendisse gravida efficitur metus vehicula aliquam. </p>
+                        <p>Mauris eget augue at elit bibendum pharetra non eu sem. Mauris eu libero et mauris pharetra pharetra. Sed iaculis ultrices tellus, quis porta dui lacinia non. Suspendisse dignissim facilisis nisi, eget sollicitudin tellus imperdiet eu. Maecenas ullamcorper diam lacus, at viverra neque lobortis eget. Cras porta leo at erat malesuada, ornare mollis magna posuere.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="attritionTips" class="form-label"><strong>Papers with similar study characteristics:</strong></label>
+                    <div class="bg-light border rounded-3 p-3">
+                        <a href="https://google.com">Paper 1</a>
+                        <br>
+                        <a href="https://google.com">Paper 2</a>
+                        <br>
+                        <a href="https://google.com">Paper 3</a>
+                    </div>
+                  </div>
+      
+                  
+      
+                </div>
+      
+                </div>
+      
+      
+              </form>
+          </div>
+          <hr class="my-4">
+
+          <span class="text-center" style="text-align: center;">Read our paper here: <a href="https://www.biorxiv.org/content/10.1101/2021.06.15.448526v1.full.pdf">https://www.biorxiv.org/content/10.1101/2021.06.15.448526v1.full.pdf</a></span>
+          <p>Attrition Rate in Infant fNIRS Research: A Meta-Analysis
+            Sori Baek, Sabrina Marques, Kennedy Casey, Meghan Testerman, Felicia McGill, Lauren Emberson
+            bioRxiv 2021.06.15.448526; doi: https://doi.org/10.1101/2021.06.15.448526</p>
+        </div>
+      </div>
+</body>
+</html>
