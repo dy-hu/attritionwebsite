@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # attritionwebsite
 =======
 # Attrition Rate in Infant fNIRS Research: A Meta-Analysis
